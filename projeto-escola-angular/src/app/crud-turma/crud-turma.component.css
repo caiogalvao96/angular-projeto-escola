@@ -1,0 +1,13 @@
+#adiv{
+  display: inline-block;
+  width: 1000px;
+  height: 800px;
+  margin-left: 150px;
+  padding: 40px;
+
+  background-color: rgb(225, 221, 216);
+}
+
+button{
+  margin-right: 15px;
+}

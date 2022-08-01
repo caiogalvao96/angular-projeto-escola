@@ -1,0 +1,68 @@
+#coluna{
+  width: 250px;
+  height: 800px;
+  background-color: rgb(44, 77, 79);
+  float: left;
+
+  padding: 15px;
+
+
+
+}
+
+#coluna-interna{
+
+  width: 100px;
+  height: 100px;
+  border-color: white;
+  border: solid;
+}
+
+#teste{
+  height: 50px;
+  width: 100%;
+
+
+
+  display: block;
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.botao{
+  border: none;
+
+  background-color: transparent;
+  color: white;
+  font-size: large;
+  width: 200px;
+
+}
+
+.botao:hover{
+  border: none;
+
+  background-color: transparent;
+  color: darkcyan;
+  font-size: large;
+  width: 200px;
+
+}
+
+.testeh:hover{
+  height: 50px;
+  width: 100%;
+
+  background-color:rgb(100, 209, 209);
+
+  display: block;
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

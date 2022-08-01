@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  background-color: whitesmoke;
+
+}
+
+thead{
+
+
+  font-size: large;
+  font-family: sans-serif;
+}
+
+.select{
+  width: 250px;
+  height: 40px;
+  border: 0px;
+  border-radius: 5px;
+  background-color:  rgb(44, 77, 79);
+  text-align: center;
+  color: white;
+  outline: 0px;
+
+
+}
+
+td, th{
+  text-align: center;
+}
+
+
+
+.titulo{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.btn-transparente{
+  background-color: transparent;
+  border: 0px;
+
+}
+
+.scrooll{
+  margin-top: 30px;
+  padding: 20px;
+  overflow: scroll;
+  height: 250px;
+}

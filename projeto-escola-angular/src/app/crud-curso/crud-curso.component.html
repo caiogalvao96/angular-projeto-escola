@@ -1,0 +1,56 @@
+<app-home></app-home>
+
+<div id="adiv">
+  <div class="titulo">
+    <h3>Cadastro de Cursos</h3>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col">
+      <label class="form-label">Id</label>
+      <input id="id" class="form-control" [(ngModel)]="curso.id" readonly>
+    </div>
+    <div class="col">
+      <label class="form-label">Nome Curso</label>
+      <input id="nomeCurso" class="form-control" [(ngModel)]="curso.nomeCurso">
+    </div>
+
+    <div id="resumo">
+      <p> {{ curso.id }} </p>
+      <p>Nome do curso: {{ curso.nomeCurso }} </p>
+      <p>Disciplinas Adicionadas:</p><br>
+      <div *ngFor="let d of curso.disciplinas; let i = index">
+        <p> {{ d.nomeDisc }}</p>
+      </div>
+    </div>
+
+    <div class="center">
+      <button class="btn btn-primary" (click)="salvar()">Enviar</button>
+    </div>
+
+    <div id="divt">
+      <table class="table table-striped ">
+        <thead>
+          <th>ID</th>
+          <th>Nome Disciplina</th>
+          <th>Hora Aula</th>
+          <th>Adicionar</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let disciplina of lista; let i = index">
+            <td>{{ disciplina.id }}</td>
+            <td>{{ disciplina.nomeDisc }}</td>
+            <td>{{ disciplina.horaAula }}</td>
+
+            <td><button class="btn btn-success" id="btn-edit" (click)="addDisciplina(i)">Adicionar</button></td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+
+

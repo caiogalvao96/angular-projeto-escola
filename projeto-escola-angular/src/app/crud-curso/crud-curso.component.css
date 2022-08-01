@@ -1,0 +1,38 @@
+#adiv{
+  display: inline-block;
+  width: 1000px;
+  height: 800px;
+  margin-left: 150px;
+  padding: 40px;
+
+  background-color: rgb(225, 221, 216);
+}
+
+
+
+#divt{
+  margin-top: 30px;
+  padding: 20px;
+  overflow: scroll;
+  height: 250px;
+}
+
+#resumo{
+  margin-top: 50px;
+  background-color: grey;
+  border-radius: 10px;
+  width: 960px;
+  overflow: scroll;
+  height: 150px;
+
+}
+
+
+
+
+
+.center{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}

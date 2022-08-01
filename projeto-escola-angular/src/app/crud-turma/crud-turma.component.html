@@ -1,0 +1,51 @@
+<app-home></app-home>
+
+<div id="adiv">
+  <div class="titulo">
+    <h3>Cadastro de Turmas</h3>
+    <h3>Cadastro de Teste github</h3>
+  </div><br><br>
+  <div class="row">
+    <div class="col">
+      <label for="id" id="id" class="form-label">ID</label>
+      <input type="text" id="id" name="id" class="form-control" readonly [(ngModel)]="turma.id">
+    </div>
+    <div class="col">
+      <label for="sigla" id="sigla" class="form-label">Sigla</label>
+      <input type="text" id="sigla" name="sigla" class="form-control" [(ngModel)]="turma.sigla">
+    </div>
+    <div class="col">
+      <label class="form-label">Selecione o curso</label>
+      <select class="select form-select" name="curso" id="curso" [(ngModel)]="x" (change)="carregaTurmas()">
+        <option *ngFor="let cu of cursos; let i = index" [value]="i">{{ cu.nomeCurso }}</option>
+      </select>
+
+    </div>
+  </div><br><br>
+  <div class="row">
+    <div>
+      <button class="btn btn-primary" (click)="enviar()">Enviar</button>
+      <button class="btn btn-success" (click)="novo()">Enviar</button>
+    </div>
+  </div><br><br>
+  <div class="scrooll">
+    <table class="table table-striped table-bordered ">
+      <thead class="thread-dark">
+        <th>ID</th>
+        <th>Sigla</th>
+        <th>Alunos</th>
+        <th>Deletar</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let turma of turmas; let i = index">
+          <td>{{ turma.id }}</td>
+          <td>{{ turma.sigla }}</td>
+          <td><button type="button" class="btn btn-success" (click)="matricular(turma.id)" >Matricular</button></td>
+          <td><button type="button" class="btn-transparente" (click)="deletar(turma.id,i)" ><img src="assets/trash.svg" width="30px" height="30px"></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+

@@ -1,0 +1,53 @@
+.row{
+  height: 100px;
+  background-color: rgb(44, 77, 79);
+  padding: 10px;
+  margin: 0%;
+  border: 0px;
+  border-style: solid;
+
+}
+
+ .col{
+  margin: 5px;
+
+  display: flex !important;
+  justify-items: center !important;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+.col-4{
+  margin: 5px;
+  padding-left: 95px;
+}
+
+
+
+#sair{
+  background-color: transparent;
+  border: 0px;
+  color: white;
+  font-size: larger;
+  font-family: Verdana, bold;
+
+
+
+}
+
+.row2{
+  display: flex;
+
+}
+
+#adiv{
+  display: inline-block;
+  width: 1000px;
+  height: 800px;
+  margin-left: 150px;
+  padding: 40px;
+
+  background-color: rgb(225, 221, 216);
+}

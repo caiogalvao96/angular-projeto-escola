@@ -1,0 +1,46 @@
+<app-home></app-home>
+<div id="adiv">
+  <div class="titulo">
+    <h2>Matricular Alunos</h2>
+  </div><br><br>
+  <div class="row">
+    <div class="col">
+      <label class="form-label">ID</label>
+      <input readonly [(ngModel)]="turma.id" class="form-control">
+    </div>
+    <div class="col">
+      <label class="form-label">Sigla</label>
+      <input readonly [(ngModel)]="turma.sigla" class="form-control">
+    </div>
+  </div><br><br>
+  <div class="row">
+    <h3>Buscar Aluno</h3>
+    <div class="col">
+      <input type="text" class="form-control" [(ngModel)]="alunoRg">
+    </div>
+    <div class="col">
+      <button class="btn btn-primary" (click)="buscarAluno()">Buscar</button>
+    </div>
+    <div class="col">
+
+    </div>
+  </div><br><br>
+  <div class="row" *ngIf="aluno.id != undefined">
+    <div class="col">
+      <input class="form-control" readonly [(ngModel)]="aluno.id">
+    </div>
+    <div class="col">
+      <input class="form-control" readonly [(ngModel)]="aluno.nome">
+    </div>
+    <div class="col">
+      <input class="form-control" readonly [(ngModel)]="aluno.sobrenome">
+    </div>
+    <div class="col">
+      <input class="form-control" readonly [(ngModel)]="aluno.rg">
+    </div>
+    <div class="col">
+      <button class="btn btn-success" (click)="matricular()">Matricular</button>
+    </div>
+  </div>
+
+</div>
